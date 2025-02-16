@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es2021",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "types": ["node", "@playwright/test", "dotenv"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}

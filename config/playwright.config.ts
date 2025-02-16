@@ -1,11 +1,15 @@
 import { defineConfig, devices } from '@playwright/test';
 import { config } from './env';
+import dotenv from 'dotenv';
+
+// loading .env file
+dotenv.config();
 
 export default defineConfig({
   // 指定测试文件所在的目录
   testDir: './tests',
   // 测试超时时间（毫秒）
-  timeout: 30000,
+  timeout: 90 * 1000,
   // 启用完全并行执行
   fullyParallel: true,
   // 在 CI 环境中禁止使用 test.only
@@ -15,7 +19,8 @@ export default defineConfig({
   // CI 环境下使用 1 个 worker，本地开发使用默认值
   workers: process.env.CI ? 1 : undefined,
   // 使用 HTML 报告器
-  reporter: 'html',
+  // reporter: 'html',
+  reporter: [["list"], ["@midscene/web/playwright-report"]],
   
   use: {
     // 基础 URL，用于相对路径解析

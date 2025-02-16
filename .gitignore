@@ -2,14 +2,16 @@
 node_modules/
 
 # 测试结果和报告
-test-results/
-playwright-report/
-playwright/.cache/
+/test-results/
+/playwright-report/
+/playwright/.cache/
 reports/
 screenshots/
+/blob-report/
 
 # 环境配置文件（只忽略 env.ts）
 /config/env.ts
+.env
 
 # IDE 配置文件
 .idea/
@@ -39,3 +41,9 @@ yarn-error.log*
 *.pem
 *.key
 *.cert
+
+# Midscene.js dump files
+midscene_run/report
+midscene_run/dump
+midscene_run/tmp
+midscene_run/cache

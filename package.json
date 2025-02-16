@@ -10,9 +10,15 @@
     "test:debug": "npm run cleanup && playwright test --headed --debug"
   },
   "devDependencies": {
-    "@playwright/test": "^1.40.0",
-    "@types/node": "^20.10.0",
-    "typescript": "^5.3.2",
-    "ts-node": "^10.9.1"
+    "@midscene/web": "^0.9.2",
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.5",
+    "dotenv": "^16.4.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "@midscene/core": "^0.11.2",
+    "playwright-mind": "file:"
   }
 }
