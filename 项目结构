@@ -1,0 +1,35 @@
+/Users/yinhexiuliyuan/Bona/TestOps/PlayWright/
+├── tests/                     # 测试用例目录
+│   ├── e2e/                  # 端到端测试用例
+│   │   ├── login/           # 登录相关测试
+│   │   └── dashboard/       # 数据看板相关测试
+│   └── fixtures/             # 测试固件
+├── pages/                    # Page Object 模式目录
+│   ├── base.page.ts         # 基础页面类
+│   ├── login.page.ts        # 登录页面
+│   └── dashboard.page.ts    # 数据看板页面
+├── utils/                    # 工具函数目录
+│   ├── cleanup.ts           # 清理脚本
+│   └── helpers/             # 辅助函数目录
+├── config/                   # 配置文件目录
+│   ├── env/                 # 环境配置目录
+│   │   ├── dev.ts          # 开发环境配置
+│   │   ├── staging.ts      # 测试环境配置
+│   │   └── prod.ts         # 生产环境配置
+│   └── selectors/           # 选择器配置目录
+│       ├── login.ts         # 登录页面选择器
+│       └── dashboard.ts     # 数据看板选择器
+├── test-data/               # 测试数据目录
+│   ├── fixtures/            # 测试固定数据
+│   └── mock/               # 模拟数据
+├── docs/                    # 文档目录
+│   ├── test-execution.md    # 测试执行指南
+│   ├── setup.md            # 环境搭建指南
+│   └── best-practices.md   # 最佳实践指南
+├── reports/                 # 测试报告目录
+├── screenshots/             # 截图存储目录
+├── README.md               # 项目说明文件
+├── package.json            # 项目配置文件
+├── playwright.config.ts    # Playwright 配置文件
+├── tsconfig.json          # TypeScript 配置文件
+└── .gitignore             # Git 忽略文件
