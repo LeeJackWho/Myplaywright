@@ -60,7 +60,7 @@ export MIDSCENE_MODEL_NAME="qwen-vl-max-latest"
 
 ## 使用示例
 
-在项目的`tests-examples`目录，附带了`bing-search-ai-example.spec.ts`例子。
+在项目的`tests-examples`目录，附带了`baidu-search-ai-example.spec.ts`例子。
 
 __示例代码__
 

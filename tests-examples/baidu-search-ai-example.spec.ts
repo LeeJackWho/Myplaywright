@@ -5,7 +5,7 @@ test.beforeEach(async ({ page }) => {
   await page.goto("https://www.baidu.com");
 });
 
-test('search keyword on bing', async ({ page, ai, aiQuery, aiAssert }) => {
+test('search keyword on baidu', async ({ page, ai, aiQuery, aiAssert }) => {
   // 👀 输入关键字，执行搜索
   await ai('搜索输入框输入"playwright"关键字，并回车');
   await page.waitForTimeout(3000);
